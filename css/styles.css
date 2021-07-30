@@ -1,0 +1,226 @@
+*{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.flex-center{
+    justify-content: center;
+}
+
+#fondo{
+    height: 100vh;
+    background-image: linear-gradient(147deg, #00000075 0%, #04619f34 74%), url(../img/imagen-principal.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    padding-top: 30px;
+    padding-bottom: 28px;
+}
+
+nav > a{
+    color: white;
+    font-weight: 300;
+    text-decoration: underline;
+    margin-left: 100px;
+    padding-left: 20%;
+    text-align: center;
+}
+
+.merch-title{
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.merch-subtitle{
+    color: rgb(112, 112, 112);
+    font-size: 26px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+.contenedor-galeria{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.titulo-galeria{
+    margin-top: 40px;
+    margin-bottom: 18px;
+    color: white;
+    text-align: center;
+    font-size: 60px;
+}
+
+.img-galeria{
+    width: 30%;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
+
+.imagen-light{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.534);
+    transform: translate(100%);
+    transition: transform .2s ease-in-out;
+}
+
+.agregar-imagen{
+    width: 60%;
+    transform: scale(0);
+    border-radius: 10px;
+    transition: transform .3s .2s;
+}
+
+.showImage{
+    transform: scale(1);
+}
+
+.show{
+    transform: translate(0);
+}
+
+.close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.button-white{
+    background: #fff;
+    color: #000;
+    display: inline-block;
+    font-size: 1.22em;
+    margin-left: 34%;
+    padding: 35px 10px;
+    text-align: center;
+    width: 400px;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0px 3px 0px #575757;
+}
+
+.icon-house{
+    margin-right: 10px;
+}
+
+.redes-sociales-title{
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.social-networks-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-networks-ind{
+    width: 28%;
+    text-align: center;
+}
+
+.social-networks-ind img{
+    width: 90%;
+    height: 90%;
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-bottom: 8px;
+}
+
+.social-networks-ind a{
+    font-weight: 300;
+    text-align: justify;
+    color: white;
+}
+
+.footer{
+    background: #2e2e2e;
+    padding: 60px 0 30px 0;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.titulo-final{
+    text-align: center;
+    margin: 20px;
+    color: rgb(24, 24, 24);
+    font-size: 30px;
+}
+
+.loader_animation{
+    position: fixed;
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    transition: all 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}  
+
+.loader_animation div{
+    position: relative;
+}
+
+.loader_animation > div{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 2rem 0.8rem;
+    border-radius: 50%;
+    background-color: white;
+    animation: loader-animation .6s infinite alternate;
+}
+
+@keyframes loader-animation{
+    to{
+        opacity: .1;
+        transform: translate3d(0, -1rem, 0);
+    }
+}
+
+.loader_animation > div:nth-child(2){
+    animation-delay: .2s;
+}
+
+.loader_animation > div:nth-child(3){
+    animation-delay: .3s;
+}
