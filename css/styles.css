@@ -154,10 +154,20 @@ nav > a{
     padding-bottom: 8px;
 }
 
-.social-networks-ind a{
-    font-weight: 300;
-    text-align: justify;
-    color: white;
+.button-a{
+    background: #fff;
+    color: #000;
+    display: inline-block;
+    font-size: 1.21em;
+    padding: 32px 10px;
+    text-align: center;
+    width: 290px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.icon{
+    margin-right: 5px;
 }
 
 .footer{
